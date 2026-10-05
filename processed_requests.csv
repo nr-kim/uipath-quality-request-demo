@@ -1,0 +1,15 @@
+﻿Request_ID,Part_Number,Part_Name,Supplier,Issue_Type,Priority,Description,Status
+R001,P1001,Brake Caliper Housing,Supplier_A,Dimension,High,Bore diameter out of tolerance,Open
+R004,P1004,IDB2 Block,Supplier_C,Dimension,High,Thread position deviation,Open
+R006,P1006,Balance Shaft,Supplier_A,Surface,High,Roughness value above limit,Open
+R008,P1008,EOP Housing,Supplier_C,Leakage,High,Oil leakage during pressure test,Open
+R011,P1011,Brake Caliper Housing,Supplier_A,Surface,High,Deep machining marks detected,Open
+R012,P1012,Wheel Cylinder,Supplier_B,Leakage,High,Seal leakage during test,Open
+R015,P1015,Master Cylinder,Supplier_E,Surface,High,Corrosion detected after storage,Open
+R016,P1016,Balance Shaft,Supplier_A,Dimension,High,Shaft diameter below tolerance,Open
+R019,P1019,Compressor Housing,Supplier_E,Dimension,High,Mounting bore misalignment,Open
+R020,P1020,Oil Pump Housing,Supplier_B,Leakage,High,Pressure loss detected,Open
+R024,P1024,IDB2 Block,Supplier_C,Leakage,High,Hydraulic channel leakage,Open
+R027,P1027,CVVD Lifter Housing,Supplier_D,Documentation,High,Traceability information missing,Open
+R028,P1028,EOP Housing,Supplier_C,Dimension,High,Connector position out of tolerance,Open
+R030,P1030,Oil Pump Housing,Supplier_B,Surface,High,Crack detected after machining,Open

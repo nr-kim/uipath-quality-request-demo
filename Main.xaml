@@ -1,0 +1,413 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="614,4884" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="errorTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="processedTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="requestData" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="errorCount" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="processedCount" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[requestData]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="automotive_quality_requests.csv" sap:VirtualizedContainerService.HintSize="560,170" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+    <Assign sap:VirtualizedContainerService.HintSize="560,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[processedTable]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[requestData.Clone()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="560,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[errorTable]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[requestData.Clone()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[requestData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="560,3954" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="558,3772" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[CurrentRow(&quot;Status&quot;).ToString = &quot;Open&quot; AndAlso CurrentRow(&quot;Priority&quot;).ToString = &quot;High&quot;]" sap:VirtualizedContainerService.HintSize="524,3712" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="522,3470" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                  <TryCatch.Try>
+                    <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,2824" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,2764" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Automotive Quality Request" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,2681" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Version="V2">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2486" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Request ID'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Text="[CurrentRow(&quot;Request_ID&quot;).ToString]" Version="V5">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="localhost/automotive_quality_test_form.html" ContentHash="VThW0LvpcEGHx0wGfi-jIg" DesignTimeRectangle="127, 272, 720, 37" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requestId' tag='INPUT' type='text' class='' aaname='Request ID' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="20e478f8-942a-4e6c-87b3-ca26ed7cb2ed" InformativeScreenshot="6637be7e2e13ba79e801f7c78609c4a5.jpg" IsResponsive="True" Reference="f1lQstWJsUqUOJ3UJNF0bw/2EeBsHub30mfQLT1pZDcOQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="127, 248, 720, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Request ID' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Request ID' /&gt;" Guid="7155ceb8-8174-42eb-a96a-c90abee49ea0" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Part Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Text="[CurrentRow(&quot;Part_Number&quot;).ToString]" Version="V5">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="localhost/automotive_quality_test_form.html" ContentHash="3REu8wbMtUmd2QQtfEKb-A" DesignTimeRectangle="127, 347, 720, 37" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='partNumber' tag='INPUT' type='text' class='' aaname='Part Number' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b514968a-5da8-4f9b-8e7e-0930e98051b5" InformativeScreenshot="a9775a472857a2e45caa2adc73b14d8b.jpg" IsResponsive="True" Reference="f1lQstWJsUqUOJ3UJNF0bw/P3sV1uJOaUq_gBPaEjPLuw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="127, 323, 720, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Part Number' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Part Number' /&gt;" Guid="d7a828da-38fc-4b61-bdd1-544e20d40395" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Part Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Text="[CurrentRow(&quot;Part_Name&quot;).ToString]" Version="V5">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="localhost/automotive_quality_test_form.html" ContentHash="c4_ItNqLNUes5l1eYzNjxQ" DesignTimeRectangle="127, 422, 720, 37" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='partName' tag='INPUT' type='text' class='' aaname='Part Name' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2c9705aa-c30e-488b-8ed7-99c4fddcdcc5" InformativeScreenshot="01605c8d4280d518349e4d63561e965c.jpg" IsResponsive="True" Reference="f1lQstWJsUqUOJ3UJNF0bw/XcjqZnsxTUebUW4TqKVZdA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="127, 398, 720, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Part Name' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Part Name' /&gt;" Guid="180d2a60-9893-48e9-b754-a87a6b6a687e" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Supplier'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Text="[CurrentRow(&quot;Supplier&quot;).ToString]" Version="V5">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="localhost/automotive_quality_test_form.html" ContentHash="vbrOBY0RBUGgQRbqpmWznQ" DesignTimeRectangle="88, 497, 720, 37" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='supplier' tag='INPUT' type='text' class='' aaname='Supplier' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c3facb32-4568-45d3-bdd6-48c3bb5c2dd3" InformativeScreenshot="969e413664dbd82efb04ebc396d54ba6.jpg" IsResponsive="True" Reference="f1lQstWJsUqUOJ3UJNF0bw/KyhimOAOxEKQCm0Iez3YTw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target DesignTimeRectangle="88, 473, 720, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Supplier' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Supplier' /&gt;" Guid="6b590343-37e2-453a-b0ec-1b2af915a3be" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Issue Type'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Text="[CurrentRow(&quot;Issue_Type&quot;).ToString]" Version="V5">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="localhost/automotive_quality_test_form.html" ContentHash="eGSrkOSc3UuoNrRx3ILwBQ" DesignTimeRectangle="127, 572, 720, 37" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='issueType' tag='INPUT' type='text' class='' aaname='Issue Type' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2a4a43cf-9fa1-4409-9a12-c2d12cca5345" InformativeScreenshot="1c30f24a5ca7b06634df844091f53bb5.jpg" IsResponsive="True" Reference="f1lQstWJsUqUOJ3UJNF0bw/XibYjBz4iUyf7qTALSEwmw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="127, 548, 720, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Issue Type' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Issue Type' /&gt;" Guid="d38fd626-1a16-4a8d-bd7d-6046caa55f81" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Priority'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Text="[CurrentRow(&quot;Priority&quot;).ToString]" Version="V5">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="localhost/automotive_quality_test_form.html" ContentHash="V81X5aDgMUOeS56ADwYy0g" DesignTimeRectangle="127, 647, 720, 37" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='priority' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6b3068ee-b795-412b-a508-6738902452ac" InformativeScreenshot="4a93de2c25afe6a02b3c27ccf65dda30.jpg" IsResponsive="True" Reference="f1lQstWJsUqUOJ3UJNF0bw/jT-81xF2VkmSO3_yPSZkog" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target DesignTimeRectangle="127, 623, 720, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Priority' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Priority' /&gt;" Guid="48639fdc-872c-482d-ba9b-76424947f7b3" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Description'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Text="[CurrentRow(&quot;Description&quot;).ToString]" Version="V5">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="localhost/automotive_quality_test_form.html" ContentHash="tEtr3xF6Iketg6MoxO07hA" DesignTimeRectangle="127, 722, 720, 90" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='description' tag='TEXTAREA' type='' class='' aaname='Description' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="245d4a75-f2a6-4801-85f4-2ec677202ad3" InformativeScreenshot="27dfb4faea824636801e87ba9f19f768.jpg" IsResponsive="True" Reference="f1lQstWJsUqUOJ3UJNF0bw/wQeaHeEvh0eGncUzkr0fKQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="127, 698, 720, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Description' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Description' /&gt;" Guid="9f2f9321-57ef-4cd0-941a-11b0ad86bb77" SearchSteps="FuzzySelector" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit Request'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b54beb05-5149-4f1e-b7ab-e4757ec6ffe3" Version="V5">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="localhost/automotive_quality_test_form.html" ContentHash="25BUNCdFc0CDgU5bHDhtxw" DesignTimeRectangle="127, 836, 135, 39" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submitBtn' tag='BUTTON' /&gt;" Guid="92d4774a-6492-4750-8a77-e6002f6c24f4" InformativeScreenshot="560c3a0fe88a37caf9540f7c84c787b9.jpg" Reference="f1lQstWJsUqUOJ3UJNF0bw/uwc3VkDi90utRZtekyxM3A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentRow.ItemArray]" DataTable="[processedTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[processedCount]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">[processedCount +1]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.OCREngine>
+                            <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                              <ActivityFunc.Argument>
+                                <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                              </ActivityFunc.Argument>
+                            </ActivityFunc>
+                          </uix:NApplicationCard.OCREngine>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="-7, 0, 974, 1039" BrowserType="Chrome" ContentHash="d8x3UIow5UWS49P4D5goZg" IconBase64="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" InformativeScreenshot="e4aa3f536c5b310264dcfd9ed65d0b2f.jpg" Reference="f1lQstWJsUqUOJ3UJNF0bw/8-6nlsv7u0u8jlYkEQXqMw" Selector="&lt;html app='chrome.exe' title='Automotive Quality Request Form' /&gt;" Url="http://localhost:8000/automotive_quality_test_form.html" Version="V3" />
+                          </uix:NApplicationCard.TargetApp>
+                        </uix:NApplicationCard>
+                      </Sequence>
+                    </Sequence>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="520,447" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentRow.ItemArray]" DataTable="[errorTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="486,221" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                          <Assign sap:VirtualizedContainerService.HintSize="486,166" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[errorCount]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[errorCount +1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                  <TryCatch.Finally>
+                    <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="520,90" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </TryCatch.Finally>
+                </TryCatch>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,90" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[processedTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="processed_requests.csv" sap:VirtualizedContainerService.HintSize="560,273" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_2" ShouldQuote="True" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="560,114" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Processed: &quot; + processedCount.ToString + Environment.NewLine + &quot;Errors: &quot; + errorCount.ToString]" />
+  </Sequence>
+</Activity>

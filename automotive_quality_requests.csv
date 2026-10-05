@@ -1,0 +1,31 @@
+Request_ID,Part_Number,Part_Name,Supplier,Issue_Type,Priority,Description,Status
+R001,P1001,Brake Caliper Housing,Supplier_A,Dimension,High,Bore diameter out of tolerance,Open
+R002,P1002,Wheel Cylinder,Supplier_B,Surface,Medium,Scratch on machined surface,Open
+R003,P1003,Mounting Plate,Supplier_A,Packaging,Low,Packaging damaged,Open
+R004,P1004,IDB2 Block,Supplier_C,Dimension,High,Thread position deviation,Open
+R005,P1005,Master Cylinder,Supplier_B,Documentation,Low,Missing inspection report,Closed
+R006,P1006,Balance Shaft,Supplier_A,Surface,High,Roughness value above limit,Open
+R007,P1007,CVVD Lifter Housing,Supplier_D,Dimension,Medium,Wall thickness deviation,Open
+R008,P1008,EOP Housing,Supplier_C,Leakage,High,Oil leakage during pressure test,Open
+R009,P1009,Compressor Housing,Supplier_E,Surface,Low,Minor discoloration,Open
+R010,P1010,Oil Pump Housing,Supplier_B,Dimension,Medium,Bolt hole position deviation,Open
+R011,P1011,Brake Caliper Housing,Supplier_A,Surface,High,Deep machining marks detected,Open
+R012,P1012,Wheel Cylinder,Supplier_B,Leakage,High,Seal leakage during test,Open
+R013,P1013,Mounting Plate,Supplier_D,Dimension,Low,Flatness slightly above target,Open
+R014,P1014,IDB2 Block,Supplier_C,Documentation,Medium,Material certificate missing,Open
+R015,P1015,Master Cylinder,Supplier_E,Surface,High,Corrosion detected after storage,Open
+R016,P1016,Balance Shaft,Supplier_A,Dimension,High,Shaft diameter below tolerance,Open
+R017,P1017,CVVD Lifter Housing,Supplier_D,Packaging,Low,Incorrect label on package,Closed
+R018,P1018,EOP Housing,Supplier_C,Surface,Medium,Paint defect near mounting area,Open
+R019,P1019,Compressor Housing,Supplier_E,Dimension,High,Mounting bore misalignment,Open
+R020,P1020,Oil Pump Housing,Supplier_B,Leakage,High,Pressure loss detected,Open
+R021,P1021,Brake Caliper Housing,Supplier_A,Documentation,Medium,Inspection result incomplete,Open
+R022,P1022,Wheel Cylinder,Supplier_B,Dimension,Low,Piston bore near tolerance limit,Open
+R023,P1023,Mounting Plate,Supplier_D,Surface,Medium,Burrs detected on edge,Open
+R024,P1024,IDB2 Block,Supplier_C,Leakage,High,Hydraulic channel leakage,Open
+R025,P1025,Master Cylinder,Supplier_E,Dimension,Medium,Thread depth below specification,Open
+R026,P1026,Balance Shaft,Supplier_A,Surface,Low,Minor scratch on shaft surface,Closed
+R027,P1027,CVVD Lifter Housing,Supplier_D,Documentation,High,Traceability information missing,Open
+R028,P1028,EOP Housing,Supplier_C,Dimension,High,Connector position out of tolerance,Open
+R029,P1029,Compressor Housing,Supplier_E,Packaging,Medium,Protective cap missing,Open
+R030,P1030,Oil Pump Housing,Supplier_B,Surface,High,Crack detected after machining,Open
