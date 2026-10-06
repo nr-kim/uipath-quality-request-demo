@@ -6,7 +6,7 @@ The workflow reads request data from a CSV file, filters requests by status and 
 
 ## Demo Video
 atch the UiPath workflow demo on YouTube]
-**https://youtu.be/TqYezQofDWA)**
+**https://youtu.be/TqYezQofDWA**
 
 ## Features
 
